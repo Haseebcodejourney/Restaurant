@@ -1,0 +1,86 @@
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg); /* Rotate clockwise 360 degrees */
+  }
+  100% {
+    transform: rotate(0deg); /* Return to initial position */
+  }
+}
+@keyframes rotateCounterClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-360deg); /* Rotate counterclockwise 360 degrees */
+  }
+  100% {
+    transform: rotate(0deg); /* Return to initial position */
+  }
+}
+.animation-food-wrapper .animation-food-inner {
+  margin-top: -180px;
+  z-index: 9999999999;
+  position: relative;
+}
+.animation-food-wrapper .animation-food-inner .upper-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+.animation-food-wrapper .animation-food-inner .upper-box h2 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #EBDFD4;
+  max-width: 800px;
+  width: 100%;
+}
+.animation-food-wrapper .animation-food-inner .upper-box figure {
+  margin: 0;
+  /* Apply slower animation for clockwise and counterclockwise rotation */
+  animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
+}
+.animation-food-wrapper .animation-food-inner .upper-box figure img {
+  width: 100%; /* Make sure the image scales to its container */
+  height: auto; /* Maintain aspect ratio */
+}
+.animation-food-wrapper .animation-food-inner .lower-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 511px;
+  overflow: hidden;
+  /* First Image: Clockwise then Counterclockwise rotation */
+  /* Second Image: Clockwise then Counterclockwise rotation */
+  /* Third Image: Clockwise then Counterclockwise rotation */
+}
+.animation-food-wrapper .animation-food-inner .lower-box .first-img {
+  display: flex;
+  align-items: center;
+}
+.animation-food-wrapper .animation-food-inner .lower-box .first-img figure img {
+  animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
+}
+.animation-food-wrapper .animation-food-inner .lower-box .first-img figure:nth-child(even) {
+  margin-left: -120px;
+  z-index: -1;
+}
+.animation-food-wrapper .animation-food-inner .lower-box .second-img figure img {
+  animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
+}
+.animation-food-wrapper .animation-food-inner .lower-box .third-img {
+  display: flex;
+  align-self: flex-start;
+}
+.animation-food-wrapper .animation-food-inner .lower-box .third-img figure img {
+  animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
+}
+
+figure, h1, h2, p {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
