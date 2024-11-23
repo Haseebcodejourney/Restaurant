@@ -1,7 +1,7 @@
 .menu-wrapper{
     max-width: 1140px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 250px auto;
     h2{
         color: #DDD6CC52;
         font-family: "Poppins", Sans-serif;
@@ -41,6 +41,7 @@
                 display: flex;
                 align-items: flex-start;
                 justify-content: space-between;
+                position: relative;
                 div{
                     h3{
                         font-size: 22px;

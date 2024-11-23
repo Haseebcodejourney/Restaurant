@@ -1,7 +1,7 @@
 .menu-wrapper {
   max-width: 1140px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 250px auto;
 }
 .menu-wrapper h2 {
   color: rgba(221, 214, 204, 0.3215686275);
@@ -42,6 +42,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
 }
 .menu-wrapper .menu-inner-wrapper .menu-details .items-list .detail-food-item div h3 {
   font-size: 22px;
