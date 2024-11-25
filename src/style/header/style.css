@@ -28,4 +28,12 @@
   border-color: rgba(255, 255, 255, 0.4705882353);
   border-radius: 0px 0px 0px 0px;
   padding: 30px;
+}
+
+a {
+  color: unset;
+}
+
+ul {
+  margin: 0px;
 }/*# sourceMappingURL=style.css.map */
