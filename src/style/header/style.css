@@ -32,6 +32,9 @@
 
 a {
   color: unset;
+  border: 1px solid red;
+  padding: 40px 3px 0px 10px;
+  margin: 10px 20px;
 }
 
 ul {
