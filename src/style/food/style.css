@@ -22,7 +22,7 @@
 }
 .animation-food-wrapper .animation-food-inner {
   margin-top: -180px;
-  z-index: 9999999999;
+  z-index: 8;
   position: relative;
 }
 .animation-food-wrapper .animation-food-inner .upper-box {
@@ -39,6 +39,7 @@
   color: #EBDFD4;
   max-width: 800px;
   width: 100%;
+  line-height: 1em;
 }
 .animation-food-wrapper .animation-food-inner .upper-box figure {
   margin: 0;

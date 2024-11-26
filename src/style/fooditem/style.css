@@ -7,7 +7,7 @@
   justify-content: flex-end;
   margin: -120px 10px 60px auto;
   position: relative;
-  z-index: 99999;
+  z-index: 8;
 }
 .food-wrapper figure img {
   border-radius: 5px 0px 5px 5px;

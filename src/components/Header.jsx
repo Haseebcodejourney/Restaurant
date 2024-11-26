@@ -1,10 +1,31 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../style/header/style.css'
 
-export default function Header() {
+const Header = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    // Handle scroll events
+    const handleScroll = () => {
+      if (window.scrollY > 50) {  // Change 50 to your desired scroll threshold
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+  
+    useEffect(() => {
+      // Add scroll event listener when component mounts
+      window.addEventListener("scroll", handleScroll);
+  
+      // Cleanup the event listener when the component unmounts
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
   return (
     <>
-        <header className='header-wrapper'>
+        <header className={`header-wrapper ${scrolled  ? "scrolled" : ""}`}>
             <div className='left-header-wrapper'>
                 <span></span>
                 <span>
@@ -24,3 +45,5 @@ export default function Header() {
     </>
   )
 }
+
+export default Header;

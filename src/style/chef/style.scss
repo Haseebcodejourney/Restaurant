@@ -1,0 +1,44 @@
+.chef-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    // max-height: 819px;
+    margin-bottom: 180px;
+    .detail-chef{
+        padding: 0px 15%;
+        height: 819px;
+        span{
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0px 20px 0px;
+        }
+        h2{
+            font-size: 80px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: normal;
+            padding: 10px 0px;
+            margin-bottom: 20px;
+        }
+        strong{
+            font-family: "beyond_infinity_-_demoregular", Sans-serif;
+            font-size: 55px;
+            font-weight: 600;
+            line-height: 1.6em;
+            letter-spacing: 1px;
+        }
+    }
+    .detail-img{
+        figure{
+            img{
+
+            }
+        }
+    }
+}

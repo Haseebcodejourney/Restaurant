@@ -67,6 +67,7 @@
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #EBDFD4;
+  position: relative;
 }
 .menu-wrapper .menu-inner-wrapper .menu-reservation h3 {
   font-size: 24px;

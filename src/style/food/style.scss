@@ -26,7 +26,7 @@
     // overflow: hidden;
     .animation-food-inner {
       margin-top: -180px;
-      z-index: 9999999999;
+      z-index: 8;
       position: relative;
       .upper-box {
         display: flex;
@@ -42,6 +42,7 @@
             color: #EBDFD4;
             max-width: 800px;
             width: 100%;
+            line-height: 1em;
 
         }
   
