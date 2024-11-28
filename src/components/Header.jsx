@@ -36,7 +36,7 @@ const Header = () => {
             </div>
             <div className='right-header-wrapper'>
                 <ul>
-                    <li>685-456-6743</li>
+                    <li>+90 548 844 2019</li>
                     <li>Order Online</li>
                     <li>Reservation</li>
                 </ul>

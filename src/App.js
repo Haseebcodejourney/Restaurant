@@ -6,6 +6,7 @@ import ContactPage from "./pages/ContactPage";
 import Header from './components/Header';
 import Footer from "./components/Footer";
 import MenuPage from "./pages/MenuPage";
+import LocatePage from "./pages/LocatePage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/locate" element={<LocatePage />} />
         </Routes>
         <Footer/>
       </Router>
