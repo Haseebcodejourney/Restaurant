@@ -4,11 +4,13 @@
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 180px;
+  max-height: 850px;
+  height: 850px;
+  overflow: hidden;
 }
 .chef-wrapper .detail-chef {
-  padding: 0px 15%;
-  height: 819px;
+  padding: 0px 205px;
+  text-align: center;
 }
 .chef-wrapper .detail-chef span {
   font-size: 20px;

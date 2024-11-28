@@ -2,14 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    // max-height: 819px;
-    margin-bottom: 180px;
+    max-height: 850px;
+    height: 850px;
+    overflow: hidden;
     .detail-chef{
-        padding: 0px 15%;
-        height: 819px;
+        padding: 0px 205px;
+        // height: 819px;
+        text-align: center;
         span{
             font-size: 20px;
             font-weight: 700;
