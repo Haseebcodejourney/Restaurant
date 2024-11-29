@@ -38,10 +38,10 @@ export default function Contact() {
                         </form>
                     </div>
                     <div className='menu-reservation'>
-                        <h3>Reservation</h3>
-                        <p>Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. </p>
-                        <p>Et leggings fanny pack, elit bespoke vinyl art.</p>
-                        <a href='#'>Reservation</a>
+                    <h3>Reservation</h3>
+						<p>Reserve your table today for an unforgettable dining experience! Call us or book online to secure your spot at our restaurant.</p>
+						<p>Enjoy a taste of Cyprus – reserve your table now and indulge in authentic flavors!</p>
+						<a>Reservation</a>
                     </div>
                 </div>
             </section>

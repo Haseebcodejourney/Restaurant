@@ -20,7 +20,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className='under-detail'>
-                        <span className='copy-right'>Copyright ThemeGoods All Right Reserved.</span>
+                        <span className='copy-right'>Copyright Near-East All Right Reserved.</span>
                         <div className='btn-wrapper'>
                             <a href='#'>Order Online</a>
                             <a href='#'>Reservation</a>

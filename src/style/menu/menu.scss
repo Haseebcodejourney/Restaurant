@@ -22,6 +22,9 @@
             padding: 10px 20px;
             flex-direction: column;
             gap: 30px;        
+            height: 400px;
+            overflow-y: scroll;
+            overflow-x: hidden;
             .items-lists-inner{
                 display: flex;
                 align-items: center;
