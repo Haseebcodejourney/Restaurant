@@ -1,161 +1,4 @@
- 
- @media screen and (min-width: 320px) {
-  .animation-food-wrapper {
-    // overflow: hidden;
-    .animation-food-inner {
-      margin-top: 0px;
-      z-index: 8;
-      position: relative;
-      .upper-box {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 40px;
-        max-width: 1140px;
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 40px;
-  
-        h2 {
-            font-size: 40px;
-            font-weight: 700;
-            color: #EBDFD4;
-            max-width: 800px;
-            width: 100%;
-            line-height: 1em;
-            text-align: center;
-
-        }
-  
-        figure {
-          margin: 0;
-          /* Apply slower animation for clockwise and counterclockwise rotation */
-          animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
-  
-          img {
-            width: 260px;
-            height: auto;
-          }
-        }
-      }
-  
-      .lower-box {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        max-height: unset;
-        overflow: hidden;
-  
-        /* First Image: Clockwise then Counterclockwise rotation */
-        .first-img {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          gap: 40px;
-          gap: 40px;
-          figure {
-            img {
-              width: 260px;
-              height: auto;
-              animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
-            }
-            &:nth-child(even){
-                margin-left:0px;
-                z-index: -1;
-            }
-          }
-        }
-  
-        /* Second Image: Clockwise then Counterclockwise rotation */
-        .second-img {
-          flex-direction: column;
-          gap: 40px;
-          margin-bottom: 40px;
-          figure {
-            img {
-              width: 260px;
-              height: auto;
-              animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
-            }
-          }
-        }
-  
-        /* Third Image: Clockwise then Counterclockwise rotation */
-        .third-img {
-          display: flex;
-          align-self: flex-start;
-          flex-direction: column;
-          gap: 40px;
-          figure {
-            img {
-              width: 260px;
-              height: auto;
-              animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
-            }
-          }
-        }
-      }
-    }
-  }
-} 
-  
-@media screen and (min-width: 767px) {
-  .animation-food-wrapper {
-    .animation-food-inner {
-      margin-top: -180px;
-      .upper-box {
-        flex-direction: row;
-        gap: 0px;
-        margin-bottom: 0px;
-        h2 {
-          font-size: 100px;
-          text-align: left;
-        }
-  
-        figure {
-          img {
-            width: 528px;
-            height: auto;
-          }
-        }
-      }
-  
-      .lower-box {
-       flex-direction: row;
-       max-height: 511px;
-        .first-img {
-       flex-direction: row;
-       gap: 0px;
-          figure {
-
-            img {
-              width: unset;
-              height: unset;
-            }
-            &:nth-child(even){
-              margin-left:-120px;
-              z-index: -1;
-          }
-           
-          }
-       }
-       .second-img{
-        margin-bottom: 0px;
-       }
-    }
-  }
-}
-}
-
-
-
-
-  figure,h1,h2,p {
-    margin: 0;
-  }
-  @keyframes rotateClockwise {
+@keyframes rotateClockwise {
     0% {
       transform: rotate(0deg);
     }
@@ -178,3 +21,88 @@
       transform: rotate(0deg); /* Return to initial position */
     }
   }
+  
+  .animation-food-wrapper {
+    // overflow: hidden;
+    .animation-food-inner {
+      margin-top: -180px;
+      z-index: 9999999999;
+      position: relative;
+      .upper-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+  
+        h2 {
+            font-size: 100px;
+            font-weight: 700;
+            color: #EBDFD4;
+            max-width: 800px;
+            width: 100%;
+
+        }
+  
+        figure {
+          margin: 0;
+          /* Apply slower animation for clockwise and counterclockwise rotation */
+          animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
+  
+          img {
+            width: 100%;  /* Make sure the image scales to its container */
+            height: auto; /* Maintain aspect ratio */
+          }
+        }
+      }
+  
+      .lower-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-height: 511px;
+        overflow: hidden;
+  
+        /* First Image: Clockwise then Counterclockwise rotation */
+        .first-img {
+          display: flex;
+          align-items: center;
+          figure {
+            img {
+              animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
+            }
+            &:nth-child(even){
+                margin-left:-120px;
+                z-index: -1;
+            }
+          }
+        }
+  
+        /* Second Image: Clockwise then Counterclockwise rotation */
+        .second-img {
+          figure {
+            img {
+              animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
+            }
+          }
+        }
+  
+        /* Third Image: Clockwise then Counterclockwise rotation */
+        .third-img {
+          display: flex;
+          align-self: flex-start;
+          figure {
+            img {
+              animation: rotateClockwise 60s ease-in-out infinite, rotateCounterClockwise 70s ease-in-out infinite alternate;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  figure,h1,h2,p {
+    margin: 0;
+  }
+  

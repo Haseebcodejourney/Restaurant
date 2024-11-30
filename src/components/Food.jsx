@@ -9,7 +9,7 @@ function Food() {
                     <div className='upper-box'>
                         <h2>Where food Speaks with Your plates</h2>
                         <figure>
-                            <img src="https://grandrestaurantv6.b-cdn.net/grandrestaurantv6/demo10/wp-content/uploads/sites/10/2021/01/image-from-rawpixel-id-2450760-png.png" alt='Food' width={528} height={528} />
+                            <img src="https://grandrestaurantv6.b-cdn.net/grandrestaurantv6/demo10/wp-content/uploads/sites/10/2021/01/image-from-rawpixel-id-2450760-png.png" alt='Food' width={350} height={350} />
                         </figure>
                     </div>
                     <div className='lower-box'>
@@ -18,7 +18,7 @@ function Food() {
                                 <img src="https://grandrestaurantv6.b-cdn.net/grandrestaurantv6/demo10/wp-content/uploads/sites/10/2021/01/image-from-rawpixel-id-2822722-png.png" alt='Food' width={420} height={492} />
                             </figure>
                             <figure>
-                                <img src="https://grandrestaurantv6.b-cdn.net/grandrestaurantv6/demo10/wp-content/uploads/sites/10/2021/01/image-from-rawpixel-id-2701795-png.png" alt='Food' width={476} height={576} />
+                                <img src="https://grandrestaurantv6.b-cdn.net/grandrestaurantv6/demo10/wp-content/uploads/sites/10/2021/01/image-from-rawpixel-id-2701795-png.png" alt='Food' width={310} height={374} />
                             </figure>
                         </div>
                         <div className='second-img'>

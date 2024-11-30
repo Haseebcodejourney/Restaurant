@@ -4,15 +4,25 @@ import '../style/hero/style.css'
 export default function Hero() {
   return (
     <>
-      <section className="hero-wrapper">
+    <section className="hero-wrapper">
         <div className="hero-inner">
           <h2>Our Mission</h2>
           <div className="hero-text-detail">
             <p>
-              Our mission is to offer an unforgettable dining experience that celebrates the rich flavors and diverse culinary traditions of Cyprus. We are dedicated to sourcing the finest local ingredients and blending them with time-honored recipes to create dishes that highlight the island's unique tastes and culture. Each meal is crafted with care and passion, ensuring every guest enjoys a taste of authentic Cypriot hospitality.
+              Meh synth Schlitz, tempor duis single-origin coffee ea next level
+              ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit
+              hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil,
+              flexitarian Truffaut synth art party deep v chillwave. Seitan High
+              Life reprehenderit consectetur cupidatat kogi. Seitan High Life
+              reprehenderit consectetur cupidatat kogi. Et leggings fanny pack,
+              elit bespoke vinyl art party Pitchfork selfies master cleanse
             </p>
             <p>
-              At our restaurant, we strive to create a warm, welcoming atmosphere where every customer feels like part of our family. Whether you're enjoying a casual meal with friends or celebrating a special occasion, our goal is to provide exceptional service, unforgettable food, and a sense of connection to the heart of Cyprus.
+              Exercitation photo booth stumptown tote bag Banksy, elit small
+              batch freegan sed. Craft beer elit seitan exercitation, photo
+              booth et 8-bit kale chips proident chillwave deep v laborum.
+              Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami
+              readymade swag.
               <div className="hero-view-more">
                 <span>View More menus</span>
               </div>
