@@ -1,50 +1,54 @@
-.header-wrapper {
-  height: 76px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  z-index: 9;
+@media screen and (min-width: 320px) {
+  .header-wrapper {
+    height: 76px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+  }
+  .header-wrapper .left-header-wrapper {
+    margin-left: 20px;
+  }
+  .header-wrapper .right-header-wrapper ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+  }
+  .header-wrapper .right-header-wrapper ul li {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0px solid rgba(255, 255, 255, 0.4705882353);
+    border-radius: 0px;
+    padding: 15px;
+  }
+  a {
+    color: unset;
+    padding: 40px 3px 0px 10px;
+    margin: 10px 20px;
+  }
+  ul {
+    margin: 0px;
+  }
+  .scrolled {
+    opacity: 1;
+    z-index: 9;
+    transform: translate(0, 0);
+    background-color: rgba(9, 27, 30, 0.8588235294);
+    height: 84px;
+    animation: slideIn 0.5s ease-out;
+  }
 }
-.header-wrapper .left-header-wrapper {
-  margin-left: 20px;
+@media screen and (min-width: 767px) {
+  .right-header-wrapper ul li {
+    border: 1px solid rgba(255, 255, 255, 0.4705882353);
+    border-radius: 0px;
+    padding: 30px;
+  }
 }
-.header-wrapper .right-header-wrapper ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0px;
-}
-.header-wrapper .right-header-wrapper ul li {
-  font-size: 16px;
-  color: #FFFFFF;
-  background-color: rgba(2, 1, 1, 0);
-  border: 1px solid rgba(255, 255, 255, 0.4705882353);
-  border-radius: 0px;
-  padding: 30px;
-}
-
-a {
-  color: unset;
-  padding: 40px 3px 0px 10px;
-  margin: 10px 20px;
-}
-
-ul {
-  margin: 0px;
-}
-
-.scrolled {
-  opacity: 1;
-  z-index: 9;
-  transform: translate(0, 0);
-  background-color: rgba(9, 27, 30, 0.8588235294);
-  height: 84px;
-  animation: slideIn 0.5s ease-out;
-}
-
 /* Keyframe animation to slide in the header */
 @keyframes slideIn {
   0% {

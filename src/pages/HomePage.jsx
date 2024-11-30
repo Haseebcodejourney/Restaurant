@@ -9,12 +9,16 @@ import Items from '../components/Items';
 export default function HomePage() {
   return (
     <>
-      <Main/>
-      <AnimationMenu/>
-      <Hero/>
-      <FoodItem/>
-      <Food/>
-      <Items/>
+        <Main/>
+        <AnimationMenu/>
+        <div className='page-wrapper'>
+          <Hero/>
+        
+        <FoodItem/>
+       
+        <Food/>
+        </div>
+        <Items/>
     </>
   )
 }
