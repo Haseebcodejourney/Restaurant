@@ -1,24 +1,27 @@
-import AnimationMenu from "./AnimationMenu";
-import Contact from "./components/Contact";
-import Food from "./components/Food";
-import FoodItem from "./components/FoodItem";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Items from "./components/Items";
-import Main from "./components/Main";
-import Menu from "./components/Menu";
+import MenuPage from "./pages/MenuPage";
+import LocatePage from "./pages/LocatePage";
+
 function App() {
   return (
     <div>
-      {/* <Main/>
-      <AnimationMenu/>
-      <Hero/>
-      <FoodItem/>
-      <Food/>
-      <Items/>
-      <Footer/> */}
-      {/* <Menu/> */}
-      <Contact/>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/menu" element={<MenuPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/locate" element={<LocatePage />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

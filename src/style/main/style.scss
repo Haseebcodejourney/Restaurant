@@ -1,48 +1,74 @@
-.main-wrapper{
+@media screen and (min-width: 320px) {
+  .main-wrapper {
     background-image: url(https://themes.themegoods.com/grandrestaurantv6/demo10/wp-content/uploads/sites/10/2021/01/food-HZ8NWTP.jpg);
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 510px;
     min-height: 80vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This keeps the background fixed during scrolling */
     background-repeat: no-repeat; /* Prevents background repetition */
-    background-color: rgba(0, 0, 0, 0); 
-    .background-overlay{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #000000;
-        opacity: 0.3;
-        z-index: 1; 
+    background-color: rgba(0, 0, 0, 0);
+    .background-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #000000;
+      opacity: 0.3;
+      z-index: 1;
     }
-    .main-wrapper-inner{
-        max-width: 1300px;
-        width: 100%;
-        text-align: left;
-        margin: 0 auto;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        // padding-top: 200px;
-        transform: translateY(100%);
+    .main-wrapper-inner {
+      max-width: 1300px;
+      width: 100%;
+      text-align: left;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      // padding-top: 200px;
+      transform: translateY(50%);
 
-        position: relative;
-        z-index: 2; /* Ensure the text is above the overlay */
-        color: white; /* Adjust text color as needed */
-        padding: 20px; /* Adjust padding as needed */
-        text-align: left; 
-        p{
-            font-size: 20px;
-            color: #ebdfd4;
-            margin-bottom: 20px;
-        }
-        h1{
-            font-size: 80px;
-            color: #ebdfd4;
-        }
+      position: relative;
+      z-index: 2; /* Ensure the text is above the overlay */
+      color: white; /* Adjust text color as needed */
+      padding: 20px; /* Adjust padding as needed */
+      text-align: left;
+      p {
+        font-size: 12px;
+        color: #ebdfd4;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 50px;
+        color: #ebdfd4;
+        line-height: 1.1;
+        text-align: center;
+      }
     }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .main-wrapper {
+    height: 700px;
+    .background-overlay {
+    }
+    .main-wrapper-inner {
+      transform: translateY(100%);
+      align-items: flex-start;
+      p {
+        font-size: 20px;
+        text-align: left;
+      }
+      h1 {
+        font-size: 80px;
+        text-align: left;
+        line-height: 1em;
+      }
+    }
+  }
 }

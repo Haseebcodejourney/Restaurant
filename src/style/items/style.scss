@@ -1,45 +1,51 @@
-.items-wrapper {
+@media screen and (min-width: 360px) {
+  .items-wrapper {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-   
+
     overflow: hidden;
-    h2{
-      font-size: 100px;
+    h2 {
+      font-size: 36px;
       font-weight: 700;
-      color: #EBDFD4;
+      color: #ebdfd4;
       text-align: center;
+      margin-bottom: 60px;
     }
-    .items-wrapper-inner{
+    .items-wrapper-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-direction: column;
+      gap: 40px;
     }
     .item-box {
       position: relative;
       background-color: #000000;
       border-radius: 5px;
       overflow: hidden; // Ensures the overlay stays within the bounds of the image
-  
+
       &:nth-child(even) {
-        margin-top: 60px;
+        // margin-top: 60px;
       }
-  
+
       figure {
         position: relative;
         margin: 0; // Reset default margin
-  
+
         img {
           border-radius: 10px; // Adds rounded corners
           transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth transition
           cursor: pointer; // Pointer on hover
-  
+          width: 100%;
+          height: auto;
+
           &:hover {
             transform: scale(1.05); // Slight zoom effect
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); // Subtle shadow effect
           }
         }
-  
+
         // Overlay effect
         &::before {
           content: ""; // Creates the overlay
@@ -48,18 +54,23 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: rgba(0, 0, 0, 0.5); // Black overlay with 50% opacity
+          background-color: rgba(
+            0,
+            0,
+            0,
+            0.5
+          ); // Black overlay with 50% opacity
           border-radius: 10px; // Match the border-radius of the image
           opacity: 0; // Initially hidden
           transition: opacity 0.3s ease; // Smooth fade-in effect
           z-index: 1;
         }
-  
+
         &:hover::before {
           opacity: 1; // Show overlay on hover
         }
       }
-  
+
       figcaption {
         position: absolute;
         bottom: 10px;
@@ -72,4 +83,25 @@
       }
     }
   }
-  
+}
+
+@media screen and (min-width: 767px) {
+  .items-wrapper {
+    h2 {
+      font-size: 100px;
+    }
+    .items-wrapper-inner {
+      flex-direction: row;
+      gap: 40px;
+    }
+    .item-box {
+      figure {
+        img {
+        }
+      }
+
+      figcaption {
+      }
+    }
+  }
+}

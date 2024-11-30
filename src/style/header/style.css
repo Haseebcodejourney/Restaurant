@@ -1,4 +1,8 @@
 @media screen and (min-width: 320px) {
+  .header-wrapper .right-header-wrapper ul li:nth-child(2),
+  .header-wrapper .right-header-wrapper ul li:nth-child(3) {
+    display: none;
+  }
   .header-wrapper {
     height: 76px;
     width: 100%;
@@ -20,7 +24,7 @@
   }
   .header-wrapper .right-header-wrapper ul li {
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     border: 0px solid rgba(255, 255, 255, 0.4705882353);
     border-radius: 0px;
     padding: 15px;
@@ -43,10 +47,19 @@
   }
 }
 @media screen and (min-width: 767px) {
+  .header-wrapper .right-header-wrapper ul li:nth-child(2),
+  .header-wrapper .right-header-wrapper ul li:nth-child(3) {
+    display: block;
+  }
   .right-header-wrapper ul li {
     border: 1px solid rgba(255, 255, 255, 0.4705882353);
     border-radius: 0px;
     padding: 30px;
+  }
+  .right-header-wrapper ul li {
+    border: 1px solid rgba(255, 255, 255, 0.4705882353) !important;
+    border-radius: 0px;
+    padding: 30px !important;
   }
 }
 /* Keyframe animation to slide in the header */
