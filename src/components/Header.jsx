@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import '../style/header/style.css'
+import '../style/header/style.css';
+import Logo from '../assets/images/eveLogo.webp';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -30,7 +31,7 @@ const Header = () => {
                 <span></span>
                 <span>
                     <figure>
-                        <img src='https://grandrestaurantv6.b-cdn.net/grandrestaurantv6/demo10/wp-content/uploads/sites/10/2021/01/logo-white.png' alt='Logo' width={90} height={59} />
+                      <img src={Logo} alt="Logo" width={90} height={59} />
                     </figure>
                 </span>
             </div>

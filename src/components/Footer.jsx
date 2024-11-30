@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Ensure this is correct
 import "../style/footer/style.css";
+import Logo from "../assets/images/EveLogo.webp";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="footer-wrapper-inner">
           <figure>
             <img
-              src="https://grandrestaurantv6.b-cdn.net/grandrestaurantv6/demo10/wp-content/uploads/sites/10/2021/01/logo-white.png"
+              src={Logo}
               alt="Footer Logo"
               width={115}
               height={75}
