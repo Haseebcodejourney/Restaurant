@@ -1,37 +1,65 @@
-.chef-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0 auto;
-  max-height: 850px;
-  height: 850px;
-  overflow: hidden;
+@media screen and (min-width: 360px) {
+  .chef-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px auto 40px auto;
+    max-height: 850px;
+    height: auto;
+    overflow: hidden;
+  }
+  .chef-wrapper .detail-chef {
+    padding: 0px;
+    text-align: center;
+  }
+  .chef-wrapper .detail-chef span {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 10px 0px 20px 0px;
+  }
+  .chef-wrapper .detail-chef h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .chef-wrapper .detail-chef p {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+  }
+  .chef-wrapper .detail-chef strong {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+  }
+  .chef-wrapper .detail-img {
+    display: none;
+  }
 }
-.chef-wrapper .detail-chef {
-  padding: 0px 205px;
-  text-align: center;
-}
-.chef-wrapper .detail-chef span {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 10px 0px 20px 0px;
-}
-.chef-wrapper .detail-chef h2 {
-  font-size: 80px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.chef-wrapper .detail-chef p {
-  font-size: 16px;
-  font-weight: normal;
-  padding: 10px 0px;
-  margin-bottom: 20px;
-}
-.chef-wrapper .detail-chef strong {
-  font-family: "beyond_infinity_-_demoregular", Sans-serif;
-  font-size: 55px;
-  font-weight: 600;
-  line-height: 1.6em;
-  letter-spacing: 1px;
+@media screen and (min-width: 767px) {
+  .chef-wrapper {
+    height: 850px;
+    margin: 0px auto;
+  }
+  .chef-wrapper .detail-chef {
+    padding: 0px 205px;
+  }
+  .chef-wrapper .detail-chef span {
+    font-size: 20px;
+  }
+  .chef-wrapper .detail-chef h2 {
+    font-size: 80px;
+  }
+  .chef-wrapper .detail-chef p {
+    font-size: 16px;
+  }
+  .chef-wrapper .detail-chef strong {
+    font-size: 55px;
+  }
+  .chef-wrapper .detail-img {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

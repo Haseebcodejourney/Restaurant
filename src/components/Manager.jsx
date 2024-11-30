@@ -5,7 +5,7 @@ export default function Manager() {
 	return (
 		<>
 			<section className='resturant-manager'>
-				<div className='resturant-manager-inner'>
+				<div className='resturant-manager-inner page-wrapper'>
 					<div className='detail-manager'>
 						<span>Restaurant Manager</span>
 						<h2>Miranda Joey</h2>

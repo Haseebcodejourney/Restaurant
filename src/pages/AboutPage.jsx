@@ -7,9 +7,14 @@ import Manager from '../components/Manager'
 export default function AboutPage() {
   return (
     <>
-      <Main/>
-      <Chef/>
-      <Manager/>
+           
+        <Main />
+        <div className='page-wrapper'>
+        <Chef />
+        </div>
+        <Manager />
+      
+
     </>
   )
 }

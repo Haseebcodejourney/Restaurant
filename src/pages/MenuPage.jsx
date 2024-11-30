@@ -6,7 +6,9 @@ export default function MenuPage() {
   return (
     <>
         <Main/>
-        <Menu/>
+        <div className='page-wrapper'>
+          <Menu/>
+        </div>
     </>
   )
 }

@@ -6,7 +6,9 @@ export default function ContactPage() {
   return (
     <>
         <Main/>
-        <Contact/>
+        <div className='page-wrapper'>
+          <Contact/>
+        </div>
     </>
   )
 }

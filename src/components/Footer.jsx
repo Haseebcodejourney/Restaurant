@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Ensure this is correct
 import "../style/footer/style.css";
-import Logo from "../assets/images/EveLogo.webp";
+// import Logo from "../assets/images/EveLogo.webp";
 
 export default function Footer() {
   return (
@@ -9,12 +9,12 @@ export default function Footer() {
       <section className=" footer-wrapper">
         <div className="footer-wrapper-inner">
           <figure>
-            <img
+            {/* <img
               src={Logo}
               alt="Footer Logo"
               width={115}
               height={75}
-            />
+            /> */}
           </figure>
           <div className="page-wrapper">
             <div className="items-list">

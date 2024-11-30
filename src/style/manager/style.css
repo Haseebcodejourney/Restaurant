@@ -1,41 +1,61 @@
-.resturant-manager {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 80px 0px;
-  background: #162B2E;
-  margin-bottom: 180px;
+@media screen and (min-width: 360px) {
+  .resturant-manager {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    background: #162B2E;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .resturant-manager .resturant-manager-inner {
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .resturant-manager .resturant-manager-inner .detail-manager {
+    max-width: 505px;
+    width: 100%;
+  }
+  .resturant-manager .resturant-manager-inner .detail-manager span {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #EBDFD4;
+  }
+  .resturant-manager .resturant-manager-inner .detail-manager h2 {
+    font-size: 45px;
+    color: #EBDFD4;
+    line-height: 1;
+  }
+  .resturant-manager .resturant-manager-inner .more-detail-resturant-manager {
+    max-width: 566px;
+    width: 100%;
+  }
+  .resturant-manager .resturant-manager-inner .more-detail-resturant-manager p {
+    font-size: 16px;
+    padding: 8px 0px;
+    color: #EBDFD4;
+  }
 }
-.resturant-manager .resturant-manager-inner {
-  max-width: 1140px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.resturant-manager .resturant-manager-inner .detail-manager {
-  max-width: 505px;
-  width: 100%;
-}
-.resturant-manager .resturant-manager-inner .detail-manager span {
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #EBDFD4;
-}
-.resturant-manager .resturant-manager-inner .detail-manager h2 {
-  font-size: 80px;
-  color: #EBDFD4;
-  line-height: 1;
-}
-.resturant-manager .resturant-manager-inner .more-detail-resturant-manager {
-  max-width: 566px;
-  width: 100%;
-}
-.resturant-manager .resturant-manager-inner .more-detail-resturant-manager p {
-  font-size: 16px;
-  padding: 8px 0px;
-  color: #EBDFD4;
+@media screen and (min-width: 767px) {
+  .resturant-manager {
+    padding: 80px 0px;
+    margin-bottom: 180px;
+    text-align: left;
+  }
+  .resturant-manager .resturant-manager-inner {
+    flex-direction: row;
+  }
+  .resturant-manager .resturant-manager-inner .detail-manager span {
+    font-size: 20px;
+  }
+  .resturant-manager .resturant-manager-inner .detail-manager h2 {
+    font-size: 80px;
+  }
 }/*# sourceMappingURL=style.css.map */
